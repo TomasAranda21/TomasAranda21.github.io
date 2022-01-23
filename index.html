@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <main class="l-main">
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contacto</h2>
+
+            <div class="contact__container bd-grid">
+                <form action='formulario.php' class="contact__form" method="post" id="formulario">
+
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <input type="text" placeholder="Nombre" class="contact__input grupos_inputs-nombre formulario__inputs" name="nombre" maxlength="50" class="nombre" id='nombre'>
+                    </div>
+
+                    <div class="formulario__grupo " id="grupo__email">
+                        <input type="email" placeholder="Email" class="contact__input grupos_inputs-email formulario__inputs" name="email" maxlength="50" id="email">                 
+                    </div>
+
+
+                    <div class="formulario__grupo" id="grupo__mensaje">
+                            <textarea name="mensaje" id="mensaje" cols="0" rows="10" class="contact__input grupos_inputs-mensaje formulario__inputs" maxlength="350" placeholder="Mensaje"></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar" class="contact__button button" name="enviar" id="boton"></input>
+                </form>
+
+                <div id="todos_mensajes">
+                </div>
+            </div>
+        </section>
+    </main>
+                <script src="js/main.js"></script>
+</body>
+</html>

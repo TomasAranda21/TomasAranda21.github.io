@@ -75,6 +75,14 @@ img{
   display: block;
 }
 
+p{
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+}
+
 /*===== CLASS CSS ===== */
 .section-title{
   position: relative;
@@ -100,7 +108,6 @@ img{
   padding-bottom: 2rem;
 }
 
-/*===== LAYOUT =====*/
 .bd-grid{
   max-width: 1024px;
   display: grid;
@@ -162,15 +169,86 @@ img{
 }
 
 
+/* Mensajes errores */
+.msj_errores-activo{
+    /* font-size: 15px; */
+    text-align: center;
+    background-color:rgb(245, 28, 28);
+    padding: 8px;
+    margin-top: 2rem;
+    color: white;
+    border-radius: .7rem;
+}
+
+.msj_errores{
+    display: none;
+
+}
+
+.msj_enviado-activo{
+    color: white;
+    text-align: center;
+    margin-top: 2.8rem;
+    background-color:rgb(44, 179, 3);
+    padding: 8px;
+    border-radius: .7rem;
+}
+
+.msj_enviado{
+    display:none;
+}
+
+.contact__input-errores{
+  width: 100%;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 2px solid rgb(177, 14, 14);
+  outline: none;
+  margin-bottom: var(--mb-4);
+}
+
+.contact__input-ok{
+  width: 100%;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 2px solid var(--first-color);
+  outline: none;
+  margin-bottom: var(--mb-4);
+}
 
 
+.mensajes-exito{
+  color: black;
+  text-align: center;
+  margin-top: 2.8rem;
+  padding: 8px;
+  border-radius: .7rem;
+
+}
 
 
+.mensaje-enviado{
+  margin-top: 1.3rem;
+  font-weight: normal;
+
+}
 
 
+.respuesta{
+  margin-top: 1.3rem;
+  font-weight: normal;
+}
 
 
-
+.gracias{
+  color: #0044ff;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
 
 
 
